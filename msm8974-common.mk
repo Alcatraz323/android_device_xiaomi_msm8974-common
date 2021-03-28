@@ -177,8 +177,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_msm8974
 
 # # LiveDisplay
-# PRODUCT_PACKAGES += \
-#     vendor.lineage.livedisplay@2.0-service-sysfs
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -274,10 +274,6 @@ PRODUCT_PACKAGES += \
 # Thermal config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-perf.conf:system/vendor/etc/thermal-engine-perf.conf
-
-# # Trust HAL
-# PRODUCT_PACKAGES += \
-#     vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
